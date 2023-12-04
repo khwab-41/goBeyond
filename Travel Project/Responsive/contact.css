@@ -1,0 +1,58 @@
+#myVideo {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+body {
+  text-align: center;
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+#dealers {
+  color: white;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: auto;
+  padding: 20px;
+}
+
+.dealer {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: xxx-large;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.831);
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h2 {
+  color: whitesmoke;
+  font-size: xx-large;
+}
+
+h3{
+    font-size: x-large;
+}

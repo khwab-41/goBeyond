@@ -1,0 +1,44 @@
+{
+    "Agra": [
+      {
+        "dealer_name": "Taj Mahal Tours",
+        "address": "123 Main Street, Agra",
+        "phone": "+91 1234567890",
+        "email": "info@tajmahaltours.com"
+      },
+      {
+        "dealer_name": "Agra Sightseeing",
+        "address": "456 2nd Street, Agra",
+        "phone": "+91 0987654321",
+        "email": "info@agrasightseeing.com"
+      }
+    ],
+    "Ladakh": [
+      {
+        "dealer_name": "Ladakh Adventures",
+        "address": "789 High Street, Leh",
+        "phone": "+91 2345678901",
+        "email": "info@ladakhadventures.com"
+      },
+      {
+        "dealer_name": "Ladakh Expeditions",
+        "address": "1010 Market Street, Leh",
+        "phone": "+91 3456789012",
+        "email": "info@ladakhexpeditions.com"
+      }
+    ],
+    "Kashmir": [
+      {
+        "dealer_name": "Kashmir Paradise Tours",
+        "address": "555 Downtown Street, Srinagar",
+        "phone": "+91 5678901234",
+        "email": "info@kashmirparadisetours.com"
+      },
+      {
+        "dealer_name": "Kashmir Adventure Trek",
+        "address": "777 New Street, Srinagar",
+        "phone": "+91 6789012345",
+        "email": "info@kashmiradventuretrek.com"
+      }
+    ]
+  }

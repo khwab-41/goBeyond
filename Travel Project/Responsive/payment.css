@@ -1,0 +1,103 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+.container_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #e0e7c9 60%, #e0e7c9 40.1%);
+}
+
+.container_1 form {
+  padding: 20px;
+  width: 700px;
+  background: rgba(255, 255, 255, 0.568);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container_1 form .row_1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.container_1 form .row_1 .col {
+  flex: 1 1 250px;
+}
+.container_1 form .row_1 .col .title {
+  font-size: 20px;
+  color: #333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container_1 form .row_1 .col .inputBox {
+  margin: 15px 0;
+}
+
+.container_1 form .row_1 .col .inputBox span {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container_1 form .row_1 .col .inputBox input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.container_1 form .row_1 .col .inputBox input:focus {
+  border: 1px solid #000;
+}
+
+.container_1 form .row_1 .col .flex {
+  display: flex;
+  gap: 15px;
+}
+.container_1 form .row_1 .col .flex .inputBox {
+  margin-top: 5px;
+}
+
+.container_1 form .row_1 .col .inputBox img {
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.container_1 form .submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 17px;
+  background: #27ae60;
+  color: rgba(255, 255, 255, 0.562);
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.container form .submit-btn:hover {
+  background: #2ecc71;
+}
+
+.container_1 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      transparent,
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("https://images.unsplash.com/photo-1530521954074-e64f6810b32d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

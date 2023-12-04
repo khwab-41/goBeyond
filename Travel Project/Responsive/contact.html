@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $.ajax({
+          url: "dealer.json",
+          dataType: "json",
+          success: function (data) {
+            var dealers = data;
+            var dealersHtml = "";
+            for (var key in dealers) {
+              if (dealers.hasOwnProperty(key)) {
+                dealersHtml += "<h2>Dealers for " + key + "</h2>";
+                for (var i = 0; i < dealers[key].length; i++) {
+                  dealersHtml += '<div class="dealer">';
+                  dealersHtml += "<h3>" + dealers[key][i].dealer_name + "</h3>";
+                  dealersHtml += "<p>" + dealers[key][i].address + "</p>";
+                  dealersHtml += "<p>Phone: " + dealers[key][i].phone + "</p>";
+                  dealersHtml += "<p>Email: " + dealers[key][i].email + "</p>";
+                  dealersHtml += "</div>";
+                }
+                dealersHtml += "<br><br>";
+              }
+            }
+            $("#dealers").html(dealersHtml);
+          },
+          error: function () {
+            alert("Unable to fetch dealers.");
+          },
+        });
+      });
+    </script>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <div class="video">
+      <video autoplay muted loop plays-inline id="myVideo">
+        <source src="media\mirror water trimmed.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <h1>Contact Us</h1>
+    <div id="dealers"></div>
+  </body>
+</html>
